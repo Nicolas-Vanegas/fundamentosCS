@@ -5,7 +5,7 @@ using System.Text;
 namespace CorEscuela.Entidades
 {
     //No es necesario que el nombre del archivo coincida con el nombre de la clase en CSharp
-    class Escuela
+    public class Escuela
     {
         //Constructor.
         //public Escuela(string nombre, int año)
@@ -33,6 +33,8 @@ namespace CorEscuela.Entidades
         //Encapsulamiento: ponerle envoltorio a los atributos para poderle agregar lógica 
         //en el futuro sin tener que cambiar nada más en la función. De esa manera tenemos nombre y lo encapsulamos
         //en la propiedad Nombre
+        public string UniqueId { get; private set; } = Guid.NewGuid().ToString();
+
         string nombre;
         public string Nombre
         {
