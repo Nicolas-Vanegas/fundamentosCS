@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\bin\Debug\netcoreapp3.1\fundamentos_cs.exe
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\bin\Debug\netcoreapp3.1\fundamentos_cs.deps.json
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\bin\Debug\netcoreapp3.1\fundamentos_cs.runtimeconfig.json
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\bin\Debug\netcoreapp3.1\fundamentos_cs.runtimeconfig.dev.json
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\bin\Debug\netcoreapp3.1\fundamentos_cs.dll
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\bin\Debug\netcoreapp3.1\fundamentos_cs.pdb
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\obj\Debug\netcoreapp3.1\fundamentos_cs.csprojAssemblyReference.cache
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\obj\Debug\netcoreapp3.1\fundamentos_cs.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\obj\Debug\netcoreapp3.1\fundamentos_cs.AssemblyInfo.cs
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\obj\Debug\netcoreapp3.1\fundamentos_cs.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\obj\Debug\netcoreapp3.1\fundamentos_cs.dll
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\obj\Debug\netcoreapp3.1\fundamentos_cs.pdb
+C:\Users\User\source\repos\fundamentos_cs\fundamentos_cs\obj\Debug\netcoreapp3.1\fundamentos_cs.genruntimeconfig.cache
