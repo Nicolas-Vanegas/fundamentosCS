@@ -18,10 +18,25 @@ namespace CorEscuela
             engine.inicializar();
             Printer.WriteTitle("Bienvenidos a la escuela");
             Printer.pitido();
-            
+
             ImprimirCursosEscuela(engine.Escuela);
+            ImprimirEvaluaciones(engine.Escuela.Alumnos);
+
         }
 
+        private static void ImprimirEvaluaciones(Alumno alumno)
+        {
+            Printer.WriteTitle("Evaluaciones");
+            //if (escuela.Cursos != null && escuela != null)
+            //lo mismo de arriba pero más chimba. no se verifican cursos salvo que escuela sea diferente de null
+            if (alumno?.Evaluacion != null)
+            {
+                foreach (var evaluacion in alumno.Evaluacion)
+                {
+                    WriteLine($"Nombre: {evaluacion.}, id: {alumno.UniqueId}");
+                }
+            }
+        }
         private static void ImprimirCursosEscuela(Escuela escuela)
         {
             Printer.WriteTitle("Cursos de la escuela");

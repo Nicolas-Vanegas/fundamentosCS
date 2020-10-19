@@ -33,7 +33,7 @@ namespace CorEscuela.App
         {
             string[] nombresEvaluaciones = { "1", "2", "3", "4", "5" };
             var listaEvaluaciones = from e in nombresEvaluaciones
-                                    select new Evaluaciones { Nombre = $"{e}" };
+                                    select new Evaluaciones { Nombre = $"Evaluación {e}" };
             return listaEvaluaciones.ToList();
         }
 
@@ -53,7 +53,7 @@ namespace CorEscuela.App
 
         private void CargarAsignaturas()
         {
-            foreach(var curso in Escuela.Cursos)
+            foreach (var curso in Escuela.Cursos)
             {
                 var listaAsignaturas = new List<Asignatura>()
                 {
@@ -63,6 +63,10 @@ namespace CorEscuela.App
                     new Asignatura{ Nombre= "Inglés" },
                 };
                 curso.Asignaturas = listaAsignaturas;
+            }
+            foreach (var asignatura in Escuela.Cursos)
+            {
+                asignatura.Evaluaciones = GenerarEvaluacionesAlAzar();
             }
         }
         private void CargarCursos()
@@ -80,6 +84,10 @@ namespace CorEscuela.App
             {
                 int cantRandom = rnd.Next(5, 20);
                 c.Alumnos = GenerarAlumnosAlAzar(cantRandom);
+                foreach (var alumno in Escuela.Cursos)
+                {
+                    alumno.Evaluaciones = new List<Evaluaciones>();
+                }
                 
             }
         }

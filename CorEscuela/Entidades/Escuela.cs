@@ -55,6 +55,8 @@ namespace CorEscuela.Entidades
         public List<Curso> Cursos { get; set; }
 
         public List<Asignatura> Asignaturas { get; set; }
+        public List<Alumno> Alumnos { get; set; }
+
 
         //override: Sobre escribir a string. Acá usamos el override porque para csharp todo es un objeto y la clase Escuela imprimia en
         //texto, de donde viene la clase, eso lo da el objeto object. Así que lo sobre escribimos.
