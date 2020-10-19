@@ -8,6 +8,7 @@ namespace CorEscuela.Entidades
     {
         public string UniqueId { get;  set; }
         public string Nombre { get;  set; }
+        public string Evaluacion { get; set; }
         public TiposJornada Jornada { get;  set; }
 
         //Constructor

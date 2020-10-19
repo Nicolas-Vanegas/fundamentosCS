@@ -22,14 +22,19 @@ namespace CorEscuela.App
                         );
             CargarCursos();
             CargarAsignaturas();
-            
-
-
+           
         }
 
         private void CargarEvaluaciones()
         {
-            throw new NotImplementedException();
+            
+        }
+        private List<Evaluaciones> GenerarEvaluacionesAlAzar()
+        {
+            string[] nombresEvaluaciones = { "1", "2", "3", "4", "5" };
+            var listaEvaluaciones = from e in nombresEvaluaciones
+                                    select new Evaluaciones { Nombre = $"{e}" };
+            return listaEvaluaciones.ToList();
         }
 
         private List<Alumno> GenerarAlumnosAlAzar(int cantidad)
@@ -69,12 +74,13 @@ namespace CorEscuela.App
                 new Curso() { Nombre = "401", Jornada = TiposJornada.Tarde },
                 new Curso() { Nombre = "501", Jornada = TiposJornada.Tarde },
             };
-            //Instanciamos el generador de números aleatorios. Nexy genera entero
+            //Instanciamos el generador de números aleatorios. Next genera entero
             Random rnd = new Random();
             foreach (var c in Escuela.Cursos)
             {
                 int cantRandom = rnd.Next(5, 20);
                 c.Alumnos = GenerarAlumnosAlAzar(cantRandom);
+                
             }
         }
     }
