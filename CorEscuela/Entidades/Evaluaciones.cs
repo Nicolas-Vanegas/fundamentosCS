@@ -14,6 +14,9 @@ namespace CorEscuela.Entidades
 
         //Constructor
         public Evaluaciones() => UniqueId = Guid.NewGuid().ToString();
-
+        public override string ToString()
+        {
+            return $"Nombre: \"{Nombre}\", Tipo: {Alumno}";
+        }
     }
 }

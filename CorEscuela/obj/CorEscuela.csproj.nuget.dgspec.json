@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\fundamentos_cs\\CorEscuela\\CorEscuela.csproj": {}
+    "C:\\Users\\User\\Documents\\Platzi\\csharp_.net_core\\fundamentos_cs\\CorEscuela\\CorEscuela.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\fundamentos_cs\\CorEscuela\\CorEscuela.csproj": {
+    "C:\\Users\\User\\Documents\\Platzi\\csharp_.net_core\\fundamentos_cs\\CorEscuela\\CorEscuela.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\fundamentos_cs\\CorEscuela\\CorEscuela.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\Platzi\\csharp_.net_core\\fundamentos_cs\\CorEscuela\\CorEscuela.csproj",
         "projectName": "CorEscuela",
-        "projectPath": "C:\\Users\\User\\source\\repos\\fundamentos_cs\\CorEscuela\\CorEscuela.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\Platzi\\csharp_.net_core\\fundamentos_cs\\CorEscuela\\CorEscuela.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\fundamentos_cs\\CorEscuela\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\Platzi\\csharp_.net_core\\fundamentos_cs\\CorEscuela\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

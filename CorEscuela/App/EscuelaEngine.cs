@@ -27,14 +27,29 @@ namespace CorEscuela.App
 
         private void CargarEvaluaciones()
         {
-            
-        }
-        private List<Evaluaciones> GenerarEvaluacionesAlAzar()
-        {
-            string[] nombresEvaluaciones = { "1", "2", "3", "4", "5" };
-            var listaEvaluaciones = from e in nombresEvaluaciones
-                                    select new Evaluaciones { Nombre = $"Evaluación {e}" };
-            return listaEvaluaciones.ToList();
+            foreach (var curso in Escuela.Cursos)
+            {
+                foreach (var asignatura in curso.Asignaturas)
+                {
+                    foreach (var alumno in curso.Alumnos)
+                    {
+                        //System.Enviroment.TickCout número de milisegundos que han pasado desde que se inició el sistema operativo
+                        var rnd = new Random(System.Environment.TickCount);
+                        for (int i = 0; i < 5; i++)
+                        {
+                            var ev = new Evaluaciones
+                            {
+                                Asignatura = asignatura,
+                                Nombre = $"{ asignatura.Nombre } Ev#{i + 1}",
+                                //minimo 0 max 5. float porque tiene que devolver un tipo float
+                                Nota = (float)(5 * rnd.NextDouble()),
+                                Alumno = alumno
+                            };
+                            alumno.Evaluaciones.Add(ev);
+                        }
+                    }
+                }
+            }
         }
 
         private List<Alumno> GenerarAlumnosAlAzar(int cantidad)
@@ -64,10 +79,6 @@ namespace CorEscuela.App
                 };
                 curso.Asignaturas = listaAsignaturas;
             }
-            foreach (var asignatura in Escuela.Cursos)
-            {
-                asignatura.Evaluaciones = GenerarEvaluacionesAlAzar();
-            }
         }
         private void CargarCursos()
         {
@@ -83,12 +94,7 @@ namespace CorEscuela.App
             foreach (var c in Escuela.Cursos)
             {
                 int cantRandom = rnd.Next(5, 20);
-                c.Alumnos = GenerarAlumnosAlAzar(cantRandom);
-                foreach (var alumno in Escuela.Cursos)
-                {
-                    alumno.Evaluaciones = new List<Evaluaciones>();
-                }
-                
+                c.Alumnos = GenerarAlumnosAlAzar(cantRandom);               
             }
         }
     }
